@@ -1,8 +1,12 @@
 import Image from "next/image";
+import Projects from "./components/Projects";
+import About from "./components/About";
+import Services from "./components/Services";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
-    <div className="relative w-full text-white">
+    <div className="relative w-full text-gray-300 font-bold">
       <Image
         src="/bg-home.jpg"
         alt="Background image"
@@ -10,53 +14,32 @@ export default function Home() {
         objectFit="cover"
         className="absolute inset-0 -z-10"
       />
+      <div className="absolute inset-0 bg-black/50"></div>
 
-      {/* Content */}
-      <div className="relative z-10">
-        {/* Welcome section */}
+      <div className="relative z-10 drop-shadow-[2px_2px_0px_#000]">
         <section className="flex flex-col justify-center items-center h-screen text-center">
-          <h1 className="text-4xl md:text-6xl font-bold">Mariana Caradec</h1>
-          <p className="text-lg md:text-2xl mt-4">Desarrolladora Full Stack</p>
+          <h1 className="text-4xl md:text-6xl">Mariana Caradec</h1>
+          <h2 className="text-lg md:text-2xl mt-4">
+            Desarrolladora Full Stack
+          </h2>
+          <h3 className="text-base md:text-xl mt-7">
+            Experiencia. Confianza. Solución.
+          </h3>
           <a
             href="#contact"
-            className="mt-6 px-6 py-3 bg-blue-500 hover:bg-blue-600 transition rounded-lg"
+            className="mt-6 px-6 py-3 bg-gray-500 hover:bg-[#CC4B06ff] transition rounded-lg"
           >
-            Contáctame
+            Contactame
           </a>
         </section>
 
-        {/* About Me */}
-        <section id="about" className="py-20 px-6 bg-gray-900 text-center">
-          <h2 className="text-3xl font-bold">Sobre Mí</h2>
-          <p className="mt-4 max-w-3xl mx-auto">
-            Soy una programadora apasionada por crear aplicaciones eficientes y
-            escalables.
-          </p>
-        </section>
+        <About />
 
-        {/* Projects */}
-        <section id="projects" className="py-20 px-6 bg-gray-800 text-center">
-          <h2 className="text-3xl font-bold">Proyectos</h2>
-          <p className="mt-4 max-w-3xl mx-auto">
-            Aquí puedes ver algunos de mis proyectos destacados.
-          </p>
-        </section>
+        <Projects />
 
-        {/* Services */}
-        <section id="services" className="py-20 px-6 bg-gray-900 text-center">
-          <h2 className="text-3xl font-bold">Servicios</h2>
-          <p className="mt-4 max-w-3xl mx-auto">
-            Ofrezco desarrollo web, optimización y consultoría técnica.
-          </p>
-        </section>
+        <Services />
 
-        {/* Contact */}
-        <section id="contact" className="py-20 px-6 bg-gray-800 text-center">
-          <h2 className="text-3xl font-bold">Contacto</h2>
-          <p className="mt-4 max-w-3xl mx-auto">
-            ¡Hablemos! Envíame un mensaje para colaborar en tu próximo proyecto.
-          </p>
-        </section>
+        <Contact />
       </div>
     </div>
   );
