@@ -20,14 +20,15 @@ const About = () => {
           <p className="md:max-w-3xl">
             Hello there! I'm Mariana and I'm a passionate programmer who enjoys
             finding new ways of creating and making high-functioning and
-            scalable apps. Because I'm not just a programmer, I'm also an user
-            that wants things fast and easy, so for me it's the most important
-            thing to achieve a good comunication with my clients and that
-            they're satisfied with the experience I create for them.
+            scalable apps. Although I'm a programmer, I'm also an user who wants
+            to do things fast and easy, so for me, the most important thing is
+            to achieve a good comunication with my clients and that they're
+            satisfied with the experience I create for them.
             <br />
             My areas of expertise are around HTML, CSS (Bootstrap/Tailwind),
-            JavaScript/TypeScript, ReactJS, NextJS and C# (.NET). With knowledge
-            about cloud services (Amazon Web Services and Google Cloud Platform)
+            JavaScript/TypeScript, ReactJS, NextJS and C# (.NET) -with knowledge
+            about cloud services (Amazon Web Services and Google Cloud
+            Platform).
           </p>
         </div>
       </main>
