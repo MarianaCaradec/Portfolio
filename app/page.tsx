@@ -6,7 +6,7 @@ import Contact from "./components/Contact";
 
 export default function Home() {
   return (
-    <div className="relative w-full text-gray-300 font-bold">
+    <div className="relative w-full text-gray-300">
       <Image
         src="/bg-home.jpg"
         alt="Background image"
@@ -29,15 +29,15 @@ export default function Home() {
             href="#contact"
             className="mt-6 px-6 py-3 bg-gray-500 hover:bg-[#CC4B06ff] transition rounded-lg"
           >
-            Contactame
+            Contact me
           </a>
         </section>
 
         <About />
 
-        <Projects />
-
         <Services />
+
+        <Projects />
 
         <Contact />
       </div>
