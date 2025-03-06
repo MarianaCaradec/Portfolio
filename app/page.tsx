@@ -23,7 +23,7 @@ export default function Home() {
             Desarrolladora Full Stack
           </h2>
           <h3 className="text-base md:text-xl mt-7">
-            Experiencia. Confianza. Solución.
+            Experience. Trust. Solution.
           </h3>
           <a
             href="#contact"
