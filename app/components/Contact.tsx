@@ -27,7 +27,7 @@ const Contact = () => {
                 fill="none"
                 stroke="currentColor"
                 strokeLinecap="round"
-                stroke-Linejoin="round"
+                strokeLinejoin="round"
                 width="24"
                 height="24"
                 stroke-width="0.75"
