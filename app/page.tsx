@@ -3,6 +3,7 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -25,12 +26,12 @@ export default function Home() {
           <h3 className="text-base md:text-xl mt-7">
             Experience. Trust. Solution.
           </h3>
-          <a
+          <Link
             href="#contact"
             className="mt-6 px-6 py-3 bg-gray-500 hover:bg-[#CC4B06ff] transition rounded-lg"
           >
             Contact me
-          </a>
+          </Link>
         </section>
 
         <About />
